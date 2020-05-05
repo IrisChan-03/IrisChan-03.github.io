@@ -1,2 +1,2 @@
-# seiyuu-memo
-声优相关记录堆积地
+# Starla House
+正在建设中...
