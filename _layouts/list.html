@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<section class="content">
+    <section class="sidebar">
+        <div class="about">
+            <img src="assets\image\icon.png" alt="my-icon">
+            <h4 class="name">
+                琳酱／星野アリサ
+            </h4>
+            <p class="tagline">
+                一枚入宅十年少女
+            </p>
+        </div>
+    </section>
+    <section class="post-list">
+        <div class="blog-header-title">
+            <h3>POST</h3>
+        </div>
+        <div class="post-content">
+            <ul>
+                {% for post in site.posts %}
+                <li>{% include card.html post = post %}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+</section>
