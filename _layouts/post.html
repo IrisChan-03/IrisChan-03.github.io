@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<section class="post-container">
+    <div class="post-content">
+        <img src="assets\image\title-bg.jpg" alt="post-cover-img">
+        <div class="post-title">
+            <a class="post-link" href="{{ page.url | relative_url }}">
+                <h1>{{ page.title | escape }}</h1>
+            </a>
+            <ul class="post-categories">
+                {%- for tag in page.categories -%}
+                <li>{{ tag }}</li>
+                {%- endfor -%}
+            </ul>
+            <div class="post-date"><i class="icon-calendar"></i>{{ page.date | date: date_format }}</div>
+        </div>
+        <div class="post-word">
+            {{ content }}
+        </div>
+    </div>
+</section>
